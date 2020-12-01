@@ -1,0 +1,68 @@
+package TemaClase;
+
+public class Jugador_futbol {
+    
+    //Atributos
+    private String nombre;
+    private double velocidad;
+    private double resistencia;
+    private double potencia;
+    private double precision;
+    
+    //Plantilla de un jugador de futbol (constructor)
+
+    public Jugador_futbol(String nombre, double velocidad, double resistencia, double potencia, double precision) {
+        this.nombre = nombre;
+        this.velocidad = velocidad;
+        this.resistencia = resistencia;
+        this.potencia = potencia;
+        this.precision = precision;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public double getVelocidad() {
+        return velocidad;
+    }
+
+    public double getResistencia() {
+        return resistencia;
+    }
+
+    public double getPotencia() {
+        return potencia;
+    }
+
+    public double getPrecision() {
+        return precision;
+    }
+    
+    //Creando metodos de la clase jugador_futbol
+    public void informacion_jugador(Jugador_futbol x){
+        //Mostrando valores a los atributos
+        System.out.println("Nombre del jugador: "+x.getNombre());
+        System.out.println("Velocidad del jugador: "+x.getVelocidad());
+        System.out.println("Potencia: "+x.getPotencia());
+        System.out.println("Resistencia: "+x.getResistencia());
+        System.out.println("Presicion: "+x.getPrecision());
+    }
+    public void correr(){
+        System.out.println("corriendo. . .");
+    }
+    public void disparo(){
+        System.out.println("Pateando el balon. . .");
+    }
+    public void amagar(){
+        System.out.println("Enganchando el balon. . .");
+    }
+    public void barrer(){
+        System.out.println("Tirandose al suelo. . .");
+    }
+    
+    
+    
+    
+    
+}

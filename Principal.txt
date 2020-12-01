@@ -1,0 +1,20 @@
+
+package TemaClase;
+
+public class Principal {
+    
+    public static void main(String[] args) {
+        //Creando el objeto
+        Jugador_futbol jugador_1 = new Jugador_futbol("Luis Cuto Guadalupe",25.6 ,80 , 85, 95);
+        
+        //Asignando metodos
+        System.out.println("Datos del jugador: \n");
+        jugador_1.informacion_jugador(jugador_1);
+        
+        System.out.println("\nFunciones del jugador: \n");
+        jugador_1.correr();
+        jugador_1.amagar();
+        jugador_1.disparo();
+        jugador_1.barrer();
+    }
+}
